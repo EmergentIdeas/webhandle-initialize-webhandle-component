@@ -6,7 +6,7 @@ that functionality is totally up to the component.
 
 There are only three rules:
 
-1. A file will exist at the root of the project, initialize-webhandle-component.mjs, that will
+1. A file will exist at the root of the package, initialize-webhandle-component.mjs, that will
 export a default async function taking a webhandle instance and options as parameters.
 
 ```js
@@ -15,7 +15,7 @@ export default async function setup(webhandle, options) {
 }
 ```
 
-2. If the function is safe to invoke multiple times on the same webhandle instance.
+2. The function is safe to invoke multiple times on the same webhandle instance.
 
 3. The function returns an object which exposes any data or functionality that the 
 component provides. This can be an empty object if there's no exposed functionality.
