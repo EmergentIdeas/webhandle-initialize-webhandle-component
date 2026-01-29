@@ -1,24 +1,24 @@
 {
-	"name": "@webhandle/setup-webhandle-server",
+	"name": "@webhandle/initialize-webhandle-component",
 	"version": "1.0.0",
 	"description": "Boilerplate code for a module to add itself to a webhandle instance",
-	"main": "create-setup-webhandle-server.mjs",
+	"main": "create-initialize-webhandle-component.mjs",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"bin": {
-		"create-setup-webhandle-server-file": "create-setup-webhandle-server-file.mjs"
+		"create-initialize-webhandle-component-file": "create-initialize-webhandle-component-file.mjs"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/EmergentIdeas/webhandle-setup-webhandle-server.git"
+		"url": "git+https://github.com/EmergentIdeas/webhandle-initialize-webhandle-component.git"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
 	"type": "module",
 	"bugs": {
-		"url": "https://github.com/EmergentIdeas/webhandle-setup-webhandle-server/issues"
+		"url": "https://github.com/EmergentIdeas/webhandle-initialize-webhandle-component/issues"
 	},
-	"homepage": "https://github.com/EmergentIdeas/webhandle-setup-webhandle-server#readme"
+	"homepage": "https://github.com/EmergentIdeas/webhandle-initialize-webhandle-component#readme"
 }
