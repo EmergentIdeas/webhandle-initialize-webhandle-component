@@ -31,7 +31,7 @@ export default class ComponentManager {
 		this.setIfUnset('services', {})
 
 		/* handlers for user requests */
-		this.setIfUnset('routers', )
+		this.setIfUnset('routers', [])
 
 		/* event emitters for communications between decoupled components */
 		this.setIfUnset('events', {

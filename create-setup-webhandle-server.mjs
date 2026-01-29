@@ -13,6 +13,7 @@ export default function createSetupWebhandleServer() {
 		setupWebhandleServer.cache[webhandle.id] = managementObject
 		webhandle.componentManagers[setupWebhandleServer.componentName] = managementObject
 		
+		managementObject.webhandle = webhandle
 		
 		
 
