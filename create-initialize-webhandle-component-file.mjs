@@ -13,6 +13,11 @@ fs.stat(outputPath, (err, stats) => {
 		fs.readFile(sourceFile, (err, data) => {
 			if(!err) {
 				data = data.toString()
+
+				// replaces the component name
+				data = data.split('@webhandle/initialize-webhandle-compoenent').join('component' + (new Date().getTime()))
+				
+				// replaces the relative includes at the top
 				data = data.split('"./').join('"@webhandle/initialize-webhandle-component/')
 				fs.writeFile(outputPath, data, (err) => {
 
