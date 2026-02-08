@@ -41,9 +41,8 @@ export default class ComponentManager {
 	}
 
 	setIfUnset(attr, value) {
-		if ((attr in this) === false) {
+		if (!this[attr]) {
 			this[attr] = value
 		}
 	}
-
 }
