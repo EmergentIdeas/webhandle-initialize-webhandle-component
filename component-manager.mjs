@@ -2,19 +2,20 @@ import EventEmitter from 'events'
 
 export default class ComponentManager {
 
-	views;
+	viewsPaths;
 	templateLoaders;
 	staticPaths;
 	staticServers;
 	sinks;
 	services;
 	routers;
+	drecks;
 	events;
 
 	constructor(options) {
 		Object.assign(this, options)
 
-		this.setIfUnset('views', [])
+		this.setIfUnset('viewsPaths', [])
 
 		/* functions which load templates */
 		this.setIfUnset('templateLoaders', [])
@@ -32,7 +33,10 @@ export default class ComponentManager {
 		this.setIfUnset('services', {})
 
 		/* handlers for user requests */
-		this.setIfUnset('routers', [])
+		this.setIfUnset('routers', {})
+
+		/* information manangement guis */
+		this.setIfUnset('drecks', {})
 
 		/* event emitters for communications between decoupled components */
 		this.setIfUnset('events', {
@@ -45,4 +49,9 @@ export default class ComponentManager {
 			this[attr] = value
 		}
 	}
+	
+	addExternalResources(externalResourceManager) {
+
+	}
+	
 }

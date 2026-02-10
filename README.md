@@ -30,7 +30,7 @@ over and over again.
 ## Install
 
 ```bash
-npm install @webhandle/initialize-webhandle-component.mjs
+npm install @webhandle/initialize-webhandle-component
 ```
 
 
