@@ -7,7 +7,7 @@ const initializeWebhandleComponent = createInitializeWebhandleComponent()
 initializeWebhandleComponent.componentName = '@webhandle/initialize-webhandle-component'
 initializeWebhandleComponent.componentDir = import.meta.dirname
 initializeWebhandleComponent.defaultConfig = {
-	"publicFilesPrefix": initializeWebhandleComponent.componentName + "/files"
+	"publicFilesPrefix": '/' + initializeWebhandleComponent.componentName + "/files"
 	, "alwaysProvideResources": false
 }
 initializeWebhandleComponent.staticFilePath = 'public'

@@ -1,6 +1,6 @@
 {
 	"name": "@webhandle/initialize-webhandle-component",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "Boilerplate code for a module to add itself to a webhandle instance",
 	"main": "create-initialize-webhandle-component.mjs",
 	"scripts": {
