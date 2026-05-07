@@ -44,6 +44,12 @@ initializeWebhandleComponent.setup = async function(webhandle, config) {
 		manager.addExternalResources(externalResourceManager)
 	})
 
+	webhandle.addTemplate(initializeWebhandleComponent.componentName + '/renderExternalResources', (data) => {
+		let externalResourceManager = initializeWebhandleComponent.getExternalResourceManager(data)
+		manager.addExternalResources(externalResourceManager)
+		return externalResourceManager.render()
+	})
+
 	webhandle.addTemplate(initializeWebhandleComponent.componentName + '/doTheThing', (data) => {
 		try {
 			let externalResourceManager = initializeWebhandleComponent.getExternalResourceManager(data)
